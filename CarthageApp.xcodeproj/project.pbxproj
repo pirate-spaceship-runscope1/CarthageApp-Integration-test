@@ -13,6 +13,8 @@
 		92FA7BA61A997E4400ED6952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FA7BA51A997E4400ED6952 /* Images.xcassets */; };
 		92FA7BA91A997E4400ED6952 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FA7BA71A997E4400ED6952 /* LaunchScreen.xib */; };
 		92FA7BB51A997E4400ED6952 /* CarthageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA7BB41A997E4400ED6952 /* CarthageAppTests.swift */; };
+		CE5EBEF11EC4AA3400429820 /* Cent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EBEEF1EC4AA3400429820 /* Cent.framework */; };
+		CE5EBEF21EC4AA3400429820 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EBEF01EC4AA3400429820 /* Dollar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		92FA7BAE1A997E4400ED6952 /* CarthageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FA7BB31A997E4400ED6952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FA7BB41A997E4400ED6952 /* CarthageAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageAppTests.swift; sourceTree = "<group>"; };
+		CE5EBEEF1EC4AA3400429820 /* Cent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cent.framework; path = Carthage/Build/iOS/Cent.framework; sourceTree = "<group>"; };
+		CE5EBEF01EC4AA3400429820 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5EBEF11EC4AA3400429820 /* Cent.framework in Frameworks */,
+				CE5EBEF21EC4AA3400429820 /* Dollar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 				92FA7B9B1A997E4400ED6952 /* CarthageApp */,
 				92FA7BB11A997E4400ED6952 /* CarthageAppTests */,
 				92FA7B9A1A997E4400ED6952 /* Products */,
+				CE5EBEEE1EC4AA3400429820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,15 @@
 				92FA7BB31A997E4400ED6952 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE5EBEEE1EC4AA3400429820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EBEEF1EC4AA3400429820 /* Cent.framework */,
+				CE5EBEF01EC4AA3400429820 /* Dollar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
